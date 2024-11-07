@@ -18,8 +18,9 @@
 
     }
    }
-
-
-
-    console.log(kaka);
-   document.querySelector('#target').innerHTML = kaka.toString();
+    let list = document.getElementById("target");
+   for (let i = 0; i < kaka.length; ++i) {
+       let li = document.createElement('li');
+       li.innerText = kaka[i];
+       list.appendChild(li);
+   }
