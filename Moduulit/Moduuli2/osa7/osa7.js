@@ -1,16 +1,17 @@
    'use strict';
     let l = []
-  function mybrainhurts() {
+  function mybrainhurts(dicesides) {
     let x
     while(true) {
-      let dice = Math.floor(Math.random() * 6) + 1;
+      let dice = Math.floor(Math.random() * dicesides) + 1;
       l.push(dice);
-      if(dice === 6) {
+      if(dice === dicesides) {
         break;
       }
     }
   }
- mybrainhurts()
+  let x = parseInt(prompt("Monta noppa sivua?"))
+ mybrainhurts(x)
        let list = document.getElementById("target");
 
    for (let i = 0; i < l.length; ++i) {
