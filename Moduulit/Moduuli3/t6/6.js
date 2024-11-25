@@ -1,5 +1,5 @@
 'use strict'
 const button = document.querySelector('button');
-button.addEventListener('mouseover', function(evt){
+button.addEventListener('click', function(evt){
   alert('Button Clicked');
 });
